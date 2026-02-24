@@ -39,7 +39,7 @@ try:
                 
             # Convertendo para PNG automaticamente
             img: np.typing.ArrayLike = Image.open(BytesIO(image_bytes))
-            img.save("resultado_final.png")
+            img.save("scope/resultado_final.png")
 
             
             print(f"Sucesso! Imagem convertida: resultado_final.png ({len(image_bytes)} bytes)")
