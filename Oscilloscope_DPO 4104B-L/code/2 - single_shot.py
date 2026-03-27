@@ -30,12 +30,12 @@ try:
         image_bytes = raw_data[offset:]
         
         # Salvando o BMP original
-        with open("scope/captura.bmp", "wb") as f:
+        with open("Oscilloscope_DPO 4104B-L/images/captura.bmp", "wb") as f:
             f.write(image_bytes)
             
         # Convertendo para PNG automaticamente
         img = Image.open(BytesIO(image_bytes))
-        img.save("scope/resultado_final.png")
+        img.save("Oscilloscope_DPO 4104B-L/images/resultado_final.png")
         
         print(f"Sucesso! Imagem convertida: resultado_final.png ({len(image_bytes)} bytes)")
     else:

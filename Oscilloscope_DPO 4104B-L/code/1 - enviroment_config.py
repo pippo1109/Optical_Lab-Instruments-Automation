@@ -3,7 +3,7 @@ import os
 import subprocess
 import venv
 
-venv_path = os.path.join(os.path.dirname(__file__), 'venv')
+venv_path = os.path.join(os.path.dirname(__file__), 'Bibliotecas configuradas')
 
 if sys.prefix == sys.base_prefix:
     if not os.path.exists(venv_path):
