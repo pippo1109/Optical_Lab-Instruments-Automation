@@ -1,2 +1,0 @@
-print('hallo 🦝')
-print("🥊 pow")
