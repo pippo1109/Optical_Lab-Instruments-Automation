@@ -2,6 +2,7 @@ import pyvisa
 import time
 from io import BytesIO
 from PIL import Image
+from save_last_images import save_last_images
 
 RESOURCE_NAME = 'USB0::1689::1049::C030475::0::INSTR'
 rm = pyvisa.ResourceManager('@py')
@@ -36,6 +37,7 @@ try:
         # Convertendo para PNG automaticamente
         img = Image.open(BytesIO(image_bytes))
         img.save("Oscilloscope_DPO 4104B-L/images/resultado_final.png")
+        save_last_images()
         
         print(f"Sucesso! Imagem convertida: resultado_final.png ({len(image_bytes)} bytes)")
     else:
