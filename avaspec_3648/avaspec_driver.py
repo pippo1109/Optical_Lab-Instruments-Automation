@@ -9,8 +9,8 @@ import sys
 import os
 from typing import Optional, Tuple, List
 
-sys.path.append('avaspecx64.dll')
-dll_path = os.path.abspath('avaspecx64.dll')
+sys.path.append(r'avaspec_3648/avaspecx64.dll')
+dll_path = os.path.abspath(r'avaspec_3648/avaspecx64.dll')
 
 
 # Constantes avaspec.h
